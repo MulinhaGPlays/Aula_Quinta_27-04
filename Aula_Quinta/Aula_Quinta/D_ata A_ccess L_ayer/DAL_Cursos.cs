@@ -9,7 +9,7 @@ namespace Aula_Quinta.D_ata_A_ccess_L_ayer
         private List<CursoViewModel> _cursos;
         private string _html = null!;
 
-        public DAL_Cursos() : base("https://www.udemy.com/pt/")
+        public DAL_Cursos() : base("Adicione o link aqui")
         {
             _cursos = new();
         }
@@ -35,29 +35,17 @@ namespace Aula_Quinta.D_ata_A_ccess_L_ayer
         {
             HtmlDocument doc = new();
             doc.LoadHtml(_html);
-            var nodes = doc.DocumentNode.SelectNodes("//*[@class='course-card--container--1QM2W course-card--medium--Fdbz0']").ToList();
-            List<CursoViewModel> cursos = nodes.Select(x =>
-            {
-                var document = new HtmlDocument();
-                document.LoadHtml(x.InnerHtml);
 
-                var nodeTitulo = document.DocumentNode.SelectSingleNode("//*[@class='ud-heading-md course-card--course-title--vVEjC']").SelectSingleNode("//a");
-                string título = String.Concat(nodeTitulo.ChildNodes.Where(n => n.NodeType == HtmlNodeType.Text).Select(n => n.InnerHtml.Trim()));
-                var descrição = document.DocumentNode.SelectSingleNode("//*[@class='ud-sr-only']").SelectNodes("//span").First().InnerText;
-                var instrutor = document.DocumentNode.SelectSingleNode("//*[@class='course-card--instructor-list--nH1OC']").InnerText;
+            //Implemente o código aqui
 
-                var curso = new CursoViewModel
-                {
-                    Título = título,
-                    Instrutor = instrutor,
-                    Descrição = descrição,
-                };
-                return curso;
-            }).ToList();
-
-            return cursos; 
+            return new(); //Troque pelo resultado
         }
 
-        public CursoViewModel? Pegar_Curso(string instrutor) => _cursos.FirstOrDefault(x => x.Instrutor.Contains(instrutor, StringComparison.InvariantCultureIgnoreCase));
+        public CursoViewModel? Pegar_Curso(string instrutor)
+        {
+            //Implemente o código aqui
+
+            return new(); //Troque pelo resultado
+        }
     }
 }
