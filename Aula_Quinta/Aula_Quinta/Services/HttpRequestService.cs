@@ -13,7 +13,7 @@ namespace Aula_Quinta.Services
             return client;
         }
 
-        public static async Task<string> GetHtml(this HttpClient client)
+        public static async Task<string> Pegar_Html(this HttpClient client)
         {
             try
             {
