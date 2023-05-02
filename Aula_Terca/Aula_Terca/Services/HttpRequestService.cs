@@ -1,6 +1,6 @@
 ﻿using AngleSharp.Html.Parser;
 
-namespace Aula_Quinta.Services
+namespace Aula_Terca.Services
 {
     public static class HttpRequestService
     {

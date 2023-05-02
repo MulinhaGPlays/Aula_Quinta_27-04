@@ -1,4 +1,4 @@
-namespace Aula_Quinta.Models
+namespace Aula_Terca.Models
 {
     public class ErrorViewModel
     {

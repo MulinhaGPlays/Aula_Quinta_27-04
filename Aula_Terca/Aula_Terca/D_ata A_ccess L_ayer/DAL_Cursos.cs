@@ -1,8 +1,8 @@
-﻿using Aula_Quinta.D_ata_A_ccess_L_ayer.Base;
-using Aula_Quinta.Models;
+﻿using Aula_Terca.D_ata_A_ccess_L_ayer.Base;
+using Aula_Terca.Models;
 using HtmlAgilityPack;
 
-namespace Aula_Quinta.D_ata_A_ccess_L_ayer
+namespace Aula_Terca.D_ata_A_ccess_L_ayer
 {
     public class DAL_Cursos : DAL_Base
     {

@@ -1,6 +1,6 @@
-﻿using Aula_Quinta.Services;
+﻿using Aula_Terca.Services;
 
-namespace Aula_Quinta.D_ata_A_ccess_L_ayer.Base
+namespace Aula_Terca.D_ata_A_ccess_L_ayer.Base
 {
     public class DAL_Base
     {

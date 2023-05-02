@@ -1,9 +1,9 @@
-﻿using Aula_Quinta.D_ata_A_ccess_L_ayer;
-using Aula_Quinta.Models;
+﻿using Aula_Terca.D_ata_A_ccess_L_ayer;
+using Aula_Terca.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Aula_Quinta.Controllers
+namespace Aula_Terca.Controllers
 {
     public class HomeController : Controller
     {
